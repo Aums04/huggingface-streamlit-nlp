@@ -1,5 +1,6 @@
 # Python virtual environment
 myenv/
+hf_env/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -17,3 +18,17 @@ __pycache__/
 
 # VSCode settings
 .vscode/
+
+# Hugging Face cache
+.cache/
+models/
+transformers_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
