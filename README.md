@@ -2,6 +2,13 @@
 
 A collection of beginner-friendly Streamlit apps demonstrating how to use Hugging Face models for various NLP tasks. This project is designed for teaching students about Streamlit and consuming Hugging Face APIs.
 
+## Author
+**Ganesh**  
+[github.com/gpalve](https://github.com/gpalve)
+
+---
+Enjoy learning Streamlit and NLP with Hugging Face!
+
 ## Features
 - **Text Generation** (`gpt2`)
 - **Sentiment Analysis** (`distilbert-base-uncased-finetuned-sst-2-english`)
@@ -56,9 +63,4 @@ A collection of beginner-friendly Streamlit apps demonstrating how to use Huggin
 - `requirements.txt` — All required Python packages
 - `.gitignore` — Recommended ignores for Python/Streamlit projects
 
-## Author
-**Ganesh**  
-[github.com/gpalve](https://github.com/gpalve)
 
----
-Enjoy learning Streamlit and NLP with Hugging Face!
