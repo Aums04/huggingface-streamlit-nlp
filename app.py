@@ -23,20 +23,50 @@ tool = st.sidebar.selectbox("Choose a tool:", (
 
 # Conditionally import and run the selected tool's code
 if tool == "Sentiment Analysis":
-    from sentiment_analysis import run_sentiment_analysis
-    run_sentiment_analysis()
+    try:
+        from sentiment_analysis import run_sentiment_analysis
+        run_sentiment_analysis()
+    except ImportError as e:
+        st.error(f"Error importing sentiment analysis: {e}")
+    except Exception as e:
+        st.error(f"Error running sentiment analysis: {e}")
 elif tool == "Text Summarization":
-    from summarization import run_summarization
-    run_summarization()
+    try:
+        from summarization import run_summarization
+        run_summarization()
+    except ImportError as e:
+        st.error(f"Error importing summarization: {e}")
+    except Exception as e:
+        st.error(f"Error running summarization: {e}")
 elif tool == "Named Entity Recognition (NER)":
-    from ner import run_ner
-    run_ner()
+    try:
+        from ner import run_ner
+        run_ner()
+    except ImportError as e:
+        st.error(f"Error importing NER: {e}")
+    except Exception as e:
+        st.error(f"Error running NER: {e}")
 elif tool == "Text Generation":
-    from text_generation import run_text_generation
-    run_text_generation()
+    try:
+        from text_generation import run_text_generation
+        run_text_generation()
+    except ImportError as e:
+        st.error(f"Error importing text generation: {e}")
+    except Exception as e:
+        st.error(f"Error running text generation: {e}")
 elif tool == "Translation (EN to HI)":
-    from translation_en_hi import run_translation
-    run_translation()
+    try:
+        from translation_en_hi import run_translation
+        run_translation()
+    except ImportError as e:
+        st.error(f"Error importing translation: {e}")
+    except Exception as e:
+        st.error(f"Error running translation: {e}")
 elif tool == "Zero-shot Classification":
-    from zero_shot import run_zero_shot
-    run_zero_shot()
+    try:
+        from zero_shot import run_zero_shot
+        run_zero_shot()
+    except ImportError as e:
+        st.error(f"Error importing zero-shot classification: {e}")
+    except Exception as e:
+        st.error(f"Error running zero-shot classification: {e}")
