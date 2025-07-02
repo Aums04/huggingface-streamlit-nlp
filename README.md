@@ -16,7 +16,6 @@ Enjoy learning Streamlit and NLP with Hugging Face!
 - **Named Entity Recognition (NER)** (`dslim/bert-base-NER`)
 - **Summarization** (`facebook/bart-large-cnn`)
 - **Zero-shot Classification** (`facebook/bart-large-mnli`)
-- **Basic Streamlit Components Demo**
 
 ## Getting Started
 
@@ -38,21 +37,18 @@ Enjoy learning Streamlit and NLP with Hugging Face!
    ```
 
 4. **Set up your Hugging Face token**
-   - Copy `.env` and add your Hugging Face API token:
+   - Create a `.env` file and add your Hugging Face API token:
      ```
      hf_token=YOUR_HF_TOKEN_HERE
      ```
 
-5. **Run any demo app**
+5. **Run the app**
    ```bash
-   streamlit run basic.py
-   # or
-   streamlit run text_generation.py
-   # or any other .py file
+   streamlit run app.py
    ```
 
 ## File Overview
-- `basic.py` — Demo of all major Streamlit components
+- `app.py` — Main Streamlit application with a sidebar to select tools.
 - `text_generation.py` — Text generation with GPT-2
 - `sentiment_analysis.py` — Sentiment analysis
 - `translation_en_hi.py` — English to Hindi translation
